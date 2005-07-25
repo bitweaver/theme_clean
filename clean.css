@@ -109,21 +109,19 @@ a img:hover {}
 	overflow: visible;
 }
 /* if you wish to display all modules on one side, please uncomment these definitions */
-/*
-#bitleft {
-	margin: 0 0.5% 10px 0;
-	float: right;
-}
-#bitright {
-	margin: 0 0.5% 10px 0;
-	float: right;
+/** /
+#bitleft, #bitright {
+	margin: 0;
 	clear: right;
+	width: 20%;
+	float: right;
 }
 #tikimain {
-	margin: 0 auto 10px 0.5%;
-	padding: 10px 0.5%;
-	width: 80%;
+	left: 1%;
+	margin: 0;
+	width: 78%;
 }
+/*
 */
 #tikibottom {
 	display:none;
