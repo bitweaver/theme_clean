@@ -100,9 +100,10 @@ a img:hover {}
 #tikimain {
 	position: absolute;
 	left: 50%;
+	padding:10px 0;
 	margin-left: -32%;
-	background: #fff;
 	width: 64%;
+	background: #fff;
 	border: 1px solid silver;
 	text-align: left;
 	overflow: visible;
@@ -114,7 +115,7 @@ a img:hover {}
 
 /*******************************************************************************************/
 /*** common classes ***/
-.display {padding:10px;}
+.display, .listing, .admin, .edit {padding:10px;}
 .preview {}
 .header {}
 .header h1, .header h1 a, .header h1 a:hover {
