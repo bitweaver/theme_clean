@@ -1,7 +1,6 @@
 {include file="bitpackage:kernel/header.tpl"}
 
 {if $print_page ne "y"}
-	<a class="skip" style="position:absolute;top:0;left:-999em;width:0;height:0;" href="#content">{tr}Skip Navigation{/tr}</a>
 
 {if $gBitSystem->isFeatureActive( 'feature_bidi' )}
 <div dir="rtl">
