@@ -100,29 +100,14 @@ a img:hover {}
 #tikimain {
 	position: absolute;
 	left: 50%;
+	padding:10px 0;
 	margin-left: -32%;
-	padding: 10px 0.5%;
-	background: #fff;
 	width: 64%;
+	background: #fff;
 	border: 1px solid silver;
 	text-align: left;
 	overflow: visible;
 }
-/* if you wish to display all modules on one side, please uncomment these definitions */
-/** /
-#bitleft, #bitright {
-	margin: 0;
-	clear: right;
-	width: 20%;
-	float: right;
-}
-#tikimain {
-	left: 1%;
-	margin: 0;
-	width: 78%;
-}
-/*
-*/
 #tikibottom {
 	display:none;
 }
@@ -130,7 +115,7 @@ a img:hover {}
 
 /*******************************************************************************************/
 /*** common classes ***/
-.display {}
+.display, .listing, .admin, .edit {padding:10px;}
 .preview {}
 .header {}
 .header h1, .header h1 a, .header h1 a:hover {
