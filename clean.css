@@ -103,15 +103,33 @@ a img:hover {}
 }
 #bitmain {
 	z-index: -1;
-	position: absolute;
-	left: 50%;
-	padding:10px 0;
-	margin-left: -32%;
-	width: 64%;
+	padding: 10px 0;
 	background: #fff;
 	border: 1px solid silver;
 	text-align: left;
 	overflow: visible;
+	position: absolute;
+}
+html>body #bitmain {
+	z-index:0;
+}
+/* adjust the width of the center column depending on number of side columns */
+.bit-cols-3 {
+	left: 50%;
+	margin-left: -32%;
+	width: 64%;
+}
+.bit-cols-2l {
+	right: 1%;
+	width: 82%;
+}
+.bit-cols-2r {
+	left: 1%;
+	width: 82%;
+}
+.bit-cols-1	{
+	left: 1%;
+	right: 1%;
 }
 #bitbottom {
 	text-align: center;
@@ -139,9 +157,7 @@ a img:hover {}
 .body {
 	padding: 5px;
 }
-.introduction {
-	padding: 5px 0;
-}
+.introduction {}
 .introductionimage {}
 .content {}
 .footer {
