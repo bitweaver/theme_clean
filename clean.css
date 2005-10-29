@@ -9,6 +9,10 @@ body {
 	background-color: #eee;
 	padding: 0 1%;
 }
+caption {
+	font-weight: bold;
+	margin-top: 1em;
+}
 th {
 	padding: 10px 0 1px 0;
 	border-bottom: 1px solid #8f0;
@@ -173,15 +177,12 @@ label {
 label:hover {
 	color: #c60;
 }
-.formlabel {}
+.formlabel {padding:2px 0 0 0;}
 .forminput {}
-.formhelp {}
+.formhelp {margin-bottom:1em;}
 .submit {
 	text-align: center;
 	padding: 15px 0 10px 0;
-}
-textarea {
-	width: 100%;
 }
 .clear {
 	clear:both;
@@ -246,7 +247,7 @@ textarea {
 				/* tabstyle */
 .tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
 	top:3px;
-	font:12px normal verdana,arial,sans-serif;
+	font:10px normal verdana,arial,sans-serif;
 	margin:0 3px;
 	padding:3px 5px 1px 5px;
 	border:1px solid #ccc;
