@@ -63,7 +63,7 @@ a img:hover {}
 
 /*******************************************************************************************/
 /*** site layout ***/
-#tikibody {
+#bitbody {
 	padding-top: 10px;
 	text-align: center;
 }
@@ -101,7 +101,7 @@ a img:hover {}
 	float: right;
 	text-align: left;
 }
-#tikimain {
+#bitmain {
 	z-index: -1;
 	position: absolute;
 	left: 50%;
@@ -113,10 +113,10 @@ a img:hover {}
 	text-align: left;
 	overflow: visible;
 }
-#tikibottom {
+#bitbottom {
 	display:none;
 }
-#tikiprint {}
+#bitprint {}
 
 /*******************************************************************************************/
 /*** common classes ***/
@@ -218,14 +218,14 @@ label:hover {
 
 /******************************************************************************************/
 /*** parsed elements ***/
-.tikibar {
+.bitbar {
 	font-weight: 600;
 	padding: 5px 0 0 15px;
 	border-bottom: 1px solid #f80;
 }
-.tikicache {}
-.tikitable {}
-.tikitable td {
+.bitcache {}
+.bittable {}
+.bittable td {
 	border: 1px solid #ddd;
 	padding: 3px;
 }
