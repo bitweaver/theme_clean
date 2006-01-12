@@ -14,17 +14,15 @@
 	{/if}
 
 	<div id="bitbody">
-		<div id="bitmain" class="bit-cols-
-			{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules and $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
-				3
-			{elseif $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
-				2l
-			{elseif $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
-				2r
-			{else}
-				1
-			{/if}
-		">
+		{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
+		<div id="bitleft">
+			{section name=homeix loop=$l_modules}
+				{$l_modules[homeix].data}
+			{/section}
+		</div>
+		{/if}
+	  
+		<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules and $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}3{elseif $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}2l{elseif $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2r{else}1{/if}">
 			{include file="bitpackage:liberty/display_structure.tpl"}
 
 			<a style="padding:0;margin:0;border:0;" name="content"></a>
@@ -41,14 +39,6 @@
 			{/if}
 		</div>
 
-		{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
-		<div id="bitleft">
-			{section name=homeix loop=$l_modules}
-				{$l_modules[homeix].data}
-			{/section}
-		</div>
-		{/if}
-	  
 		{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
 		<div id="bitright">
 			{section name=homeix loop=$r_modules}
