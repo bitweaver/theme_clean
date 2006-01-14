@@ -46,7 +46,7 @@ h3 {
 h1, h2, h3 {}
 
 /* links */
-a {
+a, a:visited {
 	text-decoration: none;
 	color: #f80;
 }
@@ -65,7 +65,6 @@ a img:hover {}
 /*** site layout ***/
 #bitbody {
 	padding-top: 10px;
-	text-align: center;
 }
 #bittop {
 	background-color: #fff;
@@ -93,43 +92,34 @@ a img:hover {}
 	margin: 0;
 	width: 16%;
 	float: left;
-	text-align: left;
 }
 #bitright {
 	margin: 0;
 	width: 16%;
 	float: right;
-	text-align: left;
 }
 #bitmain {
-	z-index: -1;
 	padding: 10px 0;
 	background: #fff;
 	border: 1px solid silver;
-	text-align: left;
 	overflow: visible;
-	position: absolute;
-}
-html>body #bitmain {
-	z-index:0;
+	float: left;
 }
 /* adjust the width of the center column depending on number of side columns */
 .bit-cols-3 {
-	left: 50%;
-	margin-left: -32%;
 	width: 64%;
+	margin: 0 0 0 2%;
 }
 .bit-cols-2l {
-	right: 1%;
 	width: 82%;
+	margin: 0 0 0 2%;
 }
 .bit-cols-2r {
-	left: 1%;
 	width: 82%;
+	margin: 0 0 0 2%;
 }
 .bit-cols-1	{
-	left: 1%;
-	right: 1%;
+	margin: 0 2%;
 }
 #bitbottom {
 	text-align: center;
