@@ -103,23 +103,25 @@ a img:hover {}
 	background: #fff;
 	border: 1px solid silver;
 	overflow: visible;
-	float: left;
 }
 /* adjust the width of the center column depending on number of side columns */
 .bit-cols-3 {
 	width: 64%;
 	margin: 0 0 0 2%;
+	float: left;
 }
 .bit-cols-2l {
 	width: 82%;
-	margin: 0 0 0 2%;
+	margin: 0;
+	float: right;
 }
 .bit-cols-2r {
 	width: 82%;
-	margin: 0 0 0 2%;
+	margin: 0;
+	float: left;
 }
 .bit-cols-1	{
-	margin: 0 2%;
+	margin: 0;
 }
 #bitbottom {
 	text-align: center;
