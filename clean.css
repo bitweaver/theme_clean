@@ -1,332 +1,146 @@
 @import url( ../../base.css );
-/*******************************************************************************************/
+
+
 /*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
-body {
-	font-family: verdana, arial, sans-serif;
-	color: #666;
-	font-size: 10px;
-	background-color: #eee;
-	padding: 0 1%;
-}
-caption {
-	font-weight: bold;
-	margin-top: 1em;
-}
-th {
-	padding: 10px 0 1px 0;
-	border-bottom: 1px solid #8f0;
-}
-td {
-	vertical-align: top;
-}
-hr {}
-small {
-	color: #999;
-}
-pre {
-	border: 1px solid #999;
-	padding: 10px;
-}
+body				{font-family:verdana, arial, sans-serif; color:#666; font-size:10px; background-color:#eee; padding:0 5px;}
+caption				{font-weight:bold; margin-top:1em;}
+th					{padding:10px 0 1px 0; border-bottom:1px solid #8f0;}
+td					{vertical-align:top;}
+hr					{}
+small				{color:#999;}
+pre					{border:1px solid #999; padding:10px;}
+
+
 
 /* general page title settings on every page */
 /* !...   !!...   !!!...   respecively */
-h1 {
-	color: #666;
-	font-size: 18px;
-}
-h2 {
-	color: #777;
-	font-size: 16px;
-}
-h3 {
-	color: #888;
-	font-size: 14px;
-}
-h1, h2, h3 {}
+h1					{color:#666; font-size:18px;}
+h2					{color:#777; font-size:16px;}
+h3					{color:#888; font-size:14px;}
+h1, h2, h3			{}
+
 
 /* links */
-a, a:visited {
-	text-decoration: none;
-	color: #f80;
-}
-a:hover {
-	background-color: #eef;
-}
+a, a:visited		{text-decoration:none; color:#f80;}
+a:hover				{background-color:#eef;}
+
 
 /* images */
-img {}
-a img:hover {}
-.icon:hover {
-	background-color: #eef;
-}
+img					{}
+a img:hover			{}
+.icon:hover			{background-color:#eef;}
 
-/*******************************************************************************************/
+
+
 /*** site layout ***/
-#bitbody {
-	padding-top: 10px;
-}
-#bittop {
-	background-color: #fff;
-	margin: 10px 0 0 0;
-	padding: 30px 0.5% 2px 0.5%;
-	border: 1px solid silver;
-}
-#bittopbar {
-	background: #fff;
-	margin: 10px 0 0 0;
-	padding: 0 0.5%;
-	border: 1px solid silver;
-}
-#bittopbar a {}
-#bittopbar a:hover {
-	background-color: #eee;
-}
-#nav ul {
-	padding:5px;
-}
-#nav li li ul {
-	margin-top:-18px;
-}
-#bitleft {
-	margin: 0;
-	width: 16%;
-	float: left;
-}
-#bitright {
-	margin: 0;
-	width: 16%;
-	float: right;
-}
-#bitmain {
-	padding: 10px 0;
-	background: #fff;
-	border: 1px solid silver;
-	overflow: visible;
-}
-/* adjust the width of the center column depending on number of side columns */
-.bit-cols-3 {
-	width: 64%;
-	margin: 0 0 0 2%;
-	float: left;
-}
-.bit-cols-2l {
-	width: 82%;
-	margin: 0;
-	float: right;
-}
-.bit-cols-2r {
-	width: 82%;
-	margin: 0;
-	float: left;
-}
-.bit-cols-1	{
-	margin: 0;
-}
-#bitbottom {
-	text-align: center;
-}
-#bitprint {}
+/* depending on what layout you choose, you might want to set this margin:0px 10px 10px 10px; */
+#header				{margin:10px 5px;}
+#content .display,
+#content .edit,
+#content .list,
+#content .admin		{margin:0px 5px 10px 5px; padding:0; background:#fff; border:1px solid silver;}
+#bittop				{background-color:#fff; padding:20px 0.5% 2px 0.5%; border:1px solid silver;}
+#bittopbar			{background:#fff; margin:10px 0 0 0; padding:0 0.5%; border:1px solid silver;}
+#bittopbar a 		{}
+#bittopbar a:hover	{background-color:#eee;}
+#bitprint			{}
+#footer				{text-align:center;}
 
-/*******************************************************************************************/
+
+
 /*** common classes ***/
-.display, .listing, .admin, .edit {padding:10px;}
-.preview {}
-.header {}
-.header h1, .header h1 a, .header h1 a:hover {
-	color: #666;
-	border-bottom: 3px solid #f80;
-	background: transparent;
-}
-.header h2 {
-	font-size: 12px;
-	font-weight: 600;
-	padding: 5px;
-}
-.date {
-	color: silver;
-}
-.body {
-	padding: 5px;
-}
-.content {}
-.footer {
-	color: silver;
-}
-.actionicon {}
-.preview {
-	border: 2px dashed silver;
-	padding: 5px;
-}
+.preview			{}
+.header				{}
+.header h1			{padding:0 10px;}
+.header h1,
+.header h1 a,
+.header h1 a:hover	{color:#666; border-bottom:3px solid #f80;}
+.header h2			{font-size:12px; font-weight:600; padding:5px;}
+.date				{color:silver;}
+.body				{padding:5px;}
+.content			{}
+.footer				{color:silver;}
+.actionicon			{}
+.preview			{border:2px dashed silver; padding:5px;}
 
-/******************************************************************************************/
+
+
 /*** forms ***/
-input, select, textarea {
-	font-family: verdana, arial, sans-serif;
-	font-size: 10px;
-}
-fieldset {
-	width: 94%;
-	border: 1px dashed #999;
-	padding: 2%;
-	margin: 10px auto;
-}
-legend {
-	color: #000;
-	padding: 1px 5px;
-	background: #eee;
-	border: 1px solid #999;
-}
-.row {}
-label {
-	color: #900;
-}
-label:hover {
-	color: #c60;
-}
-.formlabel {padding:2px 0 0 0;}
-.forminput {}
-.formhelp {margin-bottom:1em;}
-.submit {
-	text-align: center;
-	padding: 15px 0 10px 0;
-}
-.clear {
-	clear:both;
-}
-.minifind {
-	width: 330px;
-	text-align:center;
-}
+input,
+select,
+textarea			{font-family:verdana, arial, sans-serif; font-size:10px;}
+fieldset			{width:94%; border:1px dashed #999; padding:2%; margin:10px auto;}
+legend				{color:#000; padding:1px 5px; background:#eee; border:1px solid #999;}
+.row				{}
+label				{color:#900;}
+label:hover			{color:#c60;}
+.formlabel			{padding:2px 0 0 0;}
+.forminput			{}
+.formhelp			{margin-bottom:1em;}
+.submit				{text-align:center; padding:15px 0 10px 0;}
+.minifind			{width:330px; text-align:center;}
 
-/******************************************************************************************/
+
+
 /*** boxes ***/
-.box {
-	background-color: #fff;
-	border: 1px solid silver;
-}
-.boxtitle {
-	padding: 10px 0 1px 0;
-	border-bottom: 1px solid #08f;
-	font-weight: bold;
-}
-.boxcontent {
-	padding: 5px;
-}
-.module {
-	margin-bottom: 10px;
-}
+.box				{background-color:#fff; border:1px solid silver;}
+.boxtitle			{padding:10px 0 1px 0; border-bottom:1px solid #08f; font-weight:bold;}
+.boxcontent			{padding:5px;}
+.module				{margin:0 5px 10px 5px;}
 
-/******************************************************************************************/
+
+
 /*** menus ***/
 /* first we set the general settings */
-.menu .head {}
-.menu .item {}
+.menu .head			{}
+.menu .item			{}
 
-/******************************************************************************************/
+
+
 /*** parsed elements ***/
-.bitbar {
-	font-weight: 600;
-	padding: 5px 0 0 15px;
-	border-bottom: 1px solid #f80;
-}
-.bitcache {}
-.bittable {}
-.bittable td {
-	border: 1px solid #ddd;
-	padding: 3px;
-}
+.bitbar				{font-weight:600; padding:5px 0 0 15px; border-bottom:1px solid #f80;}
+.bitcache			{}
+.bittable			{}
+.bittable td		{border:1px solid #ddd; padding:3px;}
 
-/******************************************************************************************/
+
+
 /*** data tables ***/
-.other {}
-.panel {}
-.panelsubmitrow {
-	height: 40px;
-	border-bottom: 5px solid #fed;
-}
-.data {}
-.odd {
-	background: #eee;
-}
-.even {}
-.norecords {}
+.other				{}
+.panel				{}
+.panelsubmitrow		{height:40px; border-bottom:5px solid #fed;}
+.odd				{background:#eee;}
+.even				{}
+.norecords			{}
 
-				/* tabstyle */
-.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
-	top:3px;
-	font:10px normal verdana,arial,sans-serif;
-	margin:0 3px;
-	padding:3px 5px 1px 5px;
-	border:1px solid #ccc;
-	border-bottom:0;
-}
-.tabsystem .tabcontainer .tab-hover {
-	padding-top:2px;
-	border-top:2px solid #f90;
-}
-.tabsystem .tabcontainer .tab-active {
-	top:1px;
-	padding:2px 8px 4px 8px;
-	margin:0 0px;
-	border-top:2px solid #f90;
-	background:#fff;
-	color:#000;
-}
-.tabsystem .tabpage {
-	border:1px solid #ccc;
-	padding:1.5em;
-}
 
-/******************************************************************************************/
+
+/* tabstyle */
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px; font:10px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; border:1px solid #ccc; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #f90;}
+.tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #f90; background:#fff; color:#000;}
+.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
+
+
+
 /*** navigation bars and tabs ***/
-.navbar {
-	margin: 5px 0;
-	padding: 4px;
-	border-top: 3px solid silver;
-	text-align: right;
-}
-.navbar a {
-	border: 1px solid #ccc;
-	margin: 0 2px;
-	padding: 1px 3px;
-	background: #eee;
-}
-.navbar a:hover {
-	background: #fff;
-}
-.structurebar a {
-	margin:0;
-	border:0;
-	background:transparent;
-}
-/******************************************************************************************/
+.navbar				{margin:5px 0; padding:4px; border-top:3px solid silver; text-align:right;}
+.navbar a			{border:1px solid #ccc; margin:0 2px; padding:1px 3px; background:#eee;}
+.navbar a:hover		{background:#fff;}
+.structurebar a		{margin:0; border:0; background:transparent;}
+
+
+
 /*** quicktags ***/
-.quicktag {
-	border: 1px solid #fff;
-}
-.quicktag:hover {
-	border: 1px solid #fff;
-}
-a .quicktag {
-	background: #eee;
-}
-a:hover .quicktag {
-	border: 1px inset #ccc;
-	background: #ccc;
-}
-a:active .quicktag {
-	background: #fed;
-}
+.quicktag			{border:1px solid #fff;}
+.quicktag:hover		{border:1px solid #fff;}
+a .quicktag			{background:#eee;}
+a:hover .quicktag	{border:1px inset #ccc; background:#ccc;}
+a:active .quicktag	{background:#fed;}
+
 
 /* pagination at the bottom of pages with listings */
-.pagination {}
-
-/******************************************************************************************/
-/*** bottom bar ***/
-.loadstats {}
-.babelfish {}
-
-/******************************************************************************************/
-/*** settings that have to be at the end ***/
-.highlight,a .highlight {}
+.pagination			{}
