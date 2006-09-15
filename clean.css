@@ -85,7 +85,7 @@ label:hover			{color:#c60;}
 
 /*** boxes ***/
 .box				{background-color:#fff; border:1px solid silver;}
-.boxtitle			{padding:10px 0 1px 0; border-bottom:1px solid #08f;}
+.box h3				{padding:10px 0 1px 0; border-bottom:1px solid #08f;}
 .boxcontent			{padding:5px;}
 .module				{margin:0 5px 10px 5px;}
 
