@@ -1,0 +1,19 @@
+@import url( ../clean.css );
+pre						{border:0px; padding:0px;}
+a, a:visited			{text-decoration:none; color:#283A90;}
+.header h1 a:hover		{color:#666; border-bottom:3px solid #283A90;}
+.maketoc				{font-size:0.9em; width:35%; line-height:normal; border:1px solid #999; background:#eee; margin:1em 0 0em 1em; padding:1em; clear:right;}
+.maketoc h3				{padding:0; border-bottom:1px solid #999;}
+.maketoc a				{color:#666;}
+.maketoc ul				{margin:0 0 0 1em; padding:0;}
+.maketoc ul li			{list-style:square outside;}
+.maketoc ul ul			{margin:0 0 0 2em; padding:0;}
+.bitbox					{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; background:#f5f5f5;}
+.bitbar					{font-weight:600; padding:5px 0 0 15px; border-bottom:1px solid #283A90;}
+/* tabstyle */
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px; font:10px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; border:1px solid #ccc; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #283A90;}
+.tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #283A90; background:#fff; color:#000;}
+.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
