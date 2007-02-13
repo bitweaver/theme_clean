@@ -75,8 +75,8 @@ legend				{color:#000; padding:1px 5px; background:#eee; border:1px solid #999;}
 .row				{}
 label				{color:#900;}
 label:hover			{color:#c60;}
-.formlabel			{padding:2px 0 0 0;}
-.forminput			{}
+.formlabel			{line-height:18px;}
+.forminput			{line-height:18px;}
 .formhelp			{margin-bottom:1em;}
 .submit				{text-align:center; padding:15px 0 10px 0;}
 .minifind			{width:330px; text-align:center;}
