@@ -87,7 +87,12 @@ label:hover			{color:#c60;}
 .box				{background-color:#fff; border:1px solid silver;}
 .box h3				{padding:10px 0 1px 10px; border-bottom:1px solid #08f;}
 .boxcontent			{padding:5px;}
-.module				{margin:0 5px 10px 5px;}
+
+
+
+/*** modules ***/
+.module				{background-color:#fff; border:1px solid silver; margin:0 5px 10px 5px;}
+.module h3			{padding:10px 0 1px 10px; border-bottom:1px solid #08f;}
 
 
 
