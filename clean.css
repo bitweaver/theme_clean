@@ -36,6 +36,7 @@ a img:hover			{}
 /*** site layout ***/
 /* depending on what layout you choose, you might want to set this margin:0px 10px 10px 10px; */
 #header				{margin:10px 5px;}
+#header h1 a		{color:#08f;}
 #content .display,
 #content .edit,
 #content .listing,
@@ -51,12 +52,13 @@ a img:hover			{}
 
 /*** common classes ***/
 .preview			{}
-.header				{}
-.header h1			{padding:0 10px;}
 .header h1,
 .header h1 a,
 .header h1 a:hover	{color:#666; border-bottom:3px solid #f80;}
 .header h2			{font-size:12px; font-weight:600; padding:5px;}
+.header h1,
+.header h2,
+.header h3			{margin:0px; padding:15px 10px 5px 10px;}
 .date				{color:silver;}
 .body				{padding:5px;}
 .content			{}
@@ -91,6 +93,7 @@ label:hover			{color:#c60;}
 
 
 /*** modules ***/
+#header .module		{margin:0;}
 .module				{background-color:#fff; border:1px solid silver; margin:0 5px 10px 5px;}
 .module h3			{padding:10px 0 1px 10px; border-bottom:1px solid #08f;}
 
