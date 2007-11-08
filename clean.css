@@ -41,7 +41,7 @@ a img:hover			{}
 #content .edit,
 #content .listing,
 #content .admin		{margin:0px 5px 10px 5px; padding:0; background:#fff; border:1px solid silver;}
-#bittop				{background-color:#fff; padding:20px 0.5% 2px 0.5%; border:1px solid silver;}
+#bittop				{background-color:#fff; margin:10px 0 0 0; padding:20px 0.5% 2px 0.5%; border:1px solid silver;}
 #bittopbar			{background:#fff; margin:10px 0 0 0; padding:0 0.5%; border:1px solid silver;}
 #bittopbar a 		{}
 #bittopbar a:hover	{background-color:#eee;}
