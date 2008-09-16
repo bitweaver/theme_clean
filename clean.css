@@ -103,6 +103,7 @@ label:hover			{color:#c60;}
 /* first we set the general settings */
 .menu .head			{}
 .menu .item			{}
+ul.hor *				{line-height:20px;}
 
 
 
