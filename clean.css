@@ -1,4 +1,4 @@
-@import url( ../../css/base.css );
+@import url( ../../css/import.css );
 
 
 /*** global settings ***/
@@ -42,10 +42,8 @@ a img:hover			{}
 #content .listing,
 #content .admin		{margin:0px 5px 10px 5px; padding:0; background:#fff; border:1px solid silver;}
 #bittop				{background-color:#fff; margin:10px 0 0 0; padding:20px 0.5% 2px 0.5%; border:1px solid silver;}
-#bittopbar			{background:#fff; margin:10px 0 0 0; padding:0 0.5%; border:1px solid silver;}
-#bittopbar a 		{}
+#bittopbar			{background:#fff; margin:10px 0 0 0; padding:0; border:1px solid silver; height:22px;}
 #bittopbar a:hover	{background-color:#eee;}
-#bitprint			{}
 #footer				{text-align:center;}
 
 
@@ -125,21 +123,22 @@ ul.hor *				{line-height:20px;}
 .norecords			{}
 
 
-/* tabs */
-.tabsystem .tabcontainer             {margin:0; padding:0; border:0; clear:both; z-index:1;}
-.tabsystem .tabcontainer .tab,
-.tabsystem .tabcontainer .tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
-.tabsystem .tabpage                  {z-index:1; clear:both;}
+/*** listings ***/
+ul.data,
+ul.data li.item			{list-style:none; margin:0; padding:0;}
+ul.data li.item .thumb	{float:right;}
+ul.data h1,
+ul.data h2				{margin-top:0;}
 
 
 /* tabstyle */
+.tabsystem .tabcontainer a:hover		{background:transparent;}
 .tabsystem .tabcontainer .tab,
 .tabsystem .tabcontainer .tab-hover,
-.tabsystem .tabcontainer .tab-active	{top:3px; font:10px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; border:1px solid #ccc; border-bottom:0;}
-.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #f90;}
-.tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #f90; background:#fff; color:#000;}
-.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
-
+.tabsystem .tabcontainer .tab-active	{border-color:#ccc;}
+.tabsystem .tabcontainer .tab-active	{border-top-color:#f90;}
+.tabsystem .tabcontainer h4				{font:10px normal verdana,arial,sans-serif;}
+.tabsystem .tabpage						{border-color:#ccc; padding:1.5em;}
 
 
 /*** navigation bars and tabs ***/
