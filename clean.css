@@ -125,6 +125,12 @@ ul.hor *				{line-height:20px;}
 .norecords			{}
 
 
+/* tabs */
+.tabsystem .tabcontainer             {margin:0; padding:0; border:0; clear:both; z-index:1;}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
+.tabsystem .tabpage                  {z-index:1; clear:both;}
+
 
 /* tabstyle */
 .tabsystem .tabcontainer .tab,
